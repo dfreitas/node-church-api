@@ -5,8 +5,6 @@ const IntegranteSchema = new mongoose.Schema({
         email: String,
         datadeNascimento: {type: Date},
         sexo: String,
-        FilhosMenoresdeDez: Number,
-        membroCarioca: Boolean,
         status: Boolean
 });
 
