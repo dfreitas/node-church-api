@@ -10,11 +10,8 @@ mongoose.connect(process.env.DATABASE_URL || "mongodb://localhost:27017/church",
 // Express Server
 const server = express()
 server.use(cors())
+server.use(express.json())
 server.disable("x-powered-by")
-
-// Definição das rotas
-//server.use("/integrantes", IntegrantesController)
-//server.use("/ministracoes", MinistracaoController)
 server.use("/api", Routes);
 
 server.listen(process.env.PORT || 3001, () => {
