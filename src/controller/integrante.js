@@ -14,7 +14,7 @@ export default{
     },
 
     async findByCelulaId(req, res){
-        res.json("Falta implementar ....")
+        res.json("Falta implementar ...")
     }
 }
 
